@@ -7,8 +7,7 @@
     80,
     85
   ];
-  console.log(scores[2]);
-  console.log(scores.length);
-  scores[1] = 95;
+
+  scores.push(65, 72);
   console.log(scores);
 }
