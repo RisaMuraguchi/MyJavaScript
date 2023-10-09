@@ -1,11 +1,12 @@
 'use strict';
 
 {
-  const calc = (num, func) => {
-    return func(num);
-  };
+  const scores = [
+    70, 
+    90, 
+    80, 
+    85
+  ];
 
-  console.log(calc(20, (num) => {
-    return num * 2;
-  }));
+  console.log(scores);
 }
