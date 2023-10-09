@@ -8,9 +8,8 @@
     85
   ];
 
-  scores.push(77, 88);
+  scores.forEach((score, index) => {
+    console.log(`${index}: ${score}`)
+  });
 
-  for (let i = 0; i < scores.length; i++) {
-    console.log(scores[i]);
-  }
 }
