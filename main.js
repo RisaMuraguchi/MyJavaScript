@@ -1,10 +1,11 @@
 'use strict';
 
 {
-  // アロー関数
-  const double = (num) => {
-    return num * 2;
+  const calc = (num, func) => {
+    return func(num);
   };
 
-  console.log(double(10));
+  console.log(calc(20, (num) => {
+    return num * 2;
+  }));
 }
