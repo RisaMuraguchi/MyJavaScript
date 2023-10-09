@@ -8,6 +8,9 @@
     85
   ];
 
-  scores.push(65, 72);
-  console.log(scores);
+  scores.push(77, 88);
+
+  for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i]);
+  }
 }
