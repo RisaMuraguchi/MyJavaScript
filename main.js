@@ -2,20 +2,18 @@
 
 {
   document.querySelector('button').addEventListener('click', () => {
-    document.querySelectorAll('#second')[0].textContent = 'Changed!';
-    // document.querySelectorAll('li')[1].textContent = 'Changed!';
-    // document.querySelectorAll('li')[2].textContent = 'Changed!';
-    // document.querySelectorAll('.target').forEach((li) => {
-    //   li.textContent = 'Changed!';
-    // });
+    const liElement = document.createElement('li');
+    liElement.textContent = 'Hanako';
+
+    // document.querySelector('ul').appendChild(liElement);
+    // document.querySelector('ul').insertBefore(
+    //   liElement,
+    //   document.querySelector('#second')
+    //   );
+
+    if (confirm('Sure?') === true) {
+      document.querySelector('#second').remove();
+    }
   });
 }
 
-// forEach使える、CSSセレクタ全て利用可
-querySelector('li:nth-child(2)')
-querySelectorAll('ul .target')
-
-// forEach不可
-getElementById('second')
-getElementsByTagName('p')
-getElementsByClassName('target')
