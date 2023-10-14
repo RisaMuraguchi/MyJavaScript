@@ -1,8 +1,14 @@
 'use strict';
 
 {
- const n = Number(prompt('Yen?'));
- const amount = (n / 138.91).toFixed(2); //小数点を切り上げる
- console.log(`USD: ${Number(amount).toLocaleString()}`); //カンマを入れる
+ const n = Number(prompt('Count?'));
+ for (let i = 0; i < n; i++) {
+  if (i % 3 === 0) {
+    console.log(`---item ${i}---`);
+  } else {
+    console.log(` ===item ${i}===`);
+  }
+  
+ }
 }
 
