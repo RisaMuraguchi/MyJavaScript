@@ -1,8 +1,8 @@
 'use strict';
 
 {
-  document.addEventListener('keydown', (e) => {
-    document.querySelector('p').textContent = e.key;
+  document.addEventListener('mousemove', (e) => {
+    document.querySelector('p').textContent = `X: ${e.clientX} Y: ${e.clientY}`;
   });
 }
 
