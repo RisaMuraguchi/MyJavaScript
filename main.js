@@ -2,9 +2,11 @@
 
 {
   document.querySelector('button').addEventListener('click', () => {
-    // alert(document.querySelector('input').value);
-    // alert(document.querySelector('textarea').value);
-    document.querySelector('textarea').value = "";
+    document.querySelectorAll('input').forEach((radio) => {
+      if (radio.checked === true) {
+        alert(radio.value);
+      }
+    });
   });
 }
 
