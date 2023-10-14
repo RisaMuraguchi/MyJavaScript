@@ -1,9 +1,8 @@
 'use strict';
 
 {
-  document.querySelector('form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    document.querySelector('p').textContent = document.querySelector('input').value;
+  document.querySelector('button').addEventListener('click', () => {
+    document.querySelector('p').style.fontSize = '24px';
   });
 }
 
