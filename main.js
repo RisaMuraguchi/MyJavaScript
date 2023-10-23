@@ -1,14 +1,12 @@
 'use strict';
 
 {
- const n = Number(prompt('Count?'));
- for (let i = 0; i < n; i++) {
-  if (i % 3 === 0) {
-    console.log(`---item ${i}---`);
-  } else {
-    console.log(` ===item ${i}===`);
+  function getRandomInteger(max) {
+    return Math.floor(Math.random() * (max + 1));
   }
-  
+ for (let i = 0; i < 10; i++) {
+  const n = getRandomInteger(5);
+  console.log(`${i}: ${n}`);
  }
 }
 
