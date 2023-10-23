@@ -1,12 +1,16 @@
 'use strict';
 
 {
-  function getRandomInteger(max) {
-    return Math.floor(Math.random() * (max + 1));
-  }
- for (let i = 0; i < 10; i++) {
-  const n = getRandomInteger(5);
-  console.log(`${i}: ${n}`);
- }
+  const scores = [70, 90, 80, 75];
+  // let max = 0;
+
+  // scores.forEach((score) => {
+  //   if (score > max) {
+  //     max = score;
+  //   }
+  // });
+  // console.log(max);
+  console.log(Math.max(...scores));
+  console.log(Math.min(...scores));
 }
 
